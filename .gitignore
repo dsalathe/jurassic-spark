@@ -1,6 +1,7 @@
 data/
 
 .ipynb_checkpoint/
+.ipynb_checkpoints/
 
 .DS_Store 
 
