@@ -35,5 +35,3 @@ Justine: Focused on the coffee data story and some finalizations on merging diff
 Julien: Handled the tobacco data story. Linked crops to trades on the dataframe (stemmer technique). Was in charge of the template of the website. Developped interactive plots with plotLy.
 Nils: Went through the wheat and avocado stories. Also focused on cleaning the dataset. Will take the presentation in charge.
 David: Developped the folium maps. Helped through the cleaning phase. Was in charge of global vizualisation. Peer-reviewed each data stories and merge them in a consistent manner. 
-# Questions for TAs
-We would like to use another dataset (`Commodity Trade Statistics` Database) also coming from the UN data website. Is it a good idea/Is it possible to combine those two?
