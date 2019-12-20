@@ -2,7 +2,8 @@
 Milestone3.ipynb is an extension of Milestone2.ipynb. No need to reread it from the beginning. A table of contents at the begigning is available to help you navigate through this.
 
 ## Data story
-4 main data stories are presented on `index.html`. If you wanted to know the deepest secret hidden behind avocadoes, cigarettes, coffee and wheats, we invite you to have a look at it!
+4 main data stories are presented on `data_story/index.html`. If you wanted to know the deepest secret hidden behind avocadoes, cigarettes, coffee and wheats, we invite you to have a look at it!
+You can also directly see the website on the following link : jdsalomon.github.io/index
 
 # Exploring agriculture trends to highlight global phenomena
 
