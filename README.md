@@ -2,7 +2,7 @@
 Milestone3.ipynb is an extension of Milestone2.ipynb. No need to reread it from the beginning. A table of contents at the begigning is available to help you navigate through this.
 
 ## Data story
-4 main data stories are presentend on `TBA.html`. If you wanted to know the deepest secret hidden behind avocadoes, cigarettes, coffee and wheats, we invite you to have a look at it!
+4 main data stories are presented on `index.html`. If you wanted to know the deepest secret hidden behind avocadoes, cigarettes, coffee and wheats, we invite you to have a look at it!
 
 # Exploring agriculture trends to highlight global phenomena
 
@@ -31,7 +31,7 @@ All objectives were reached, except the timeseries representation. We decided to
 
 # Milestone 3
 We went mainly through deep analysis on the four following stories: avocadoes, cigarettes, coffee and wheats. Our folium method was greatly enhanced. Here are how we split the overall work:
-- Justine: Focused on the coffee data story and some finalizations on merging different dataframe, such as population statistics, production, trades and item regroupment of food.
-- Julien: Handled the tobacco data story. Linked crops to trades on the dataframe (stemmer technique). Was in charge of the template of the website. Developped interactive plots with plotLy.
-- Nils: Went through the wheat and avocado stories. Also focused on cleaning the dataset. Will take the presentation in charge.
-- David: Developped the folium maps. Helped through the cleaning phase. Was in charge of global vizualisation. Peer-reviewed each data stories and merge them in a consistent manner.
+Justine: Focused on the coffee data story and some finalizations on merging different dataframe, such as population statistics, production, trades and item regroupment of food.
+Julien: Handled the tobacco data story. Linked crops to trades on the dataframe (stemmer technique). Was in charge of the template of the website. Developped interactive plots with plotLy.
+Nils: Went through the wheat and avocado stories. Also focused on cleaning the dataset. Will take the presentation in charge.
+David: Developped the folium maps. Helped through the cleaning phase. Was in charge of global vizualisation. Peer-reviewed each data stories and merge them in a consistent manner.
