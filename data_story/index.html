@@ -1,0 +1,465 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>ADA - FAOSTATS</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="divided">
+
+		<!-- One -->
+		<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+			<div class="content" align="justify">
+				<h1>The journey behind a typical hipster sunday hangover brunch</h1>
+				<p>Imagine sitting on the terrace of a Parisian café on Sunday morning before ending the weekend and going back to work, a coffee with a cigarette and an avocado toast in hand <em> - typical hipster routine </em>. <br /> Where could your arabica coffee come from ? Why is it that avocado toasts can be found anywhere now, compared to last decade ? Has the cost of the flour of your bread always been the same ? Where do you think your cigarette has been produced ?
+					</p>
+				<p>The difficulty of knowing the actual story behind what we consume is the topic that interests us. We will show how factors such as globalization, economical crises, or social trends can indirectly influence the products we consume and their price, by focusing on four crops : wheat, avocados, coffee and tobacco.
+					</p>
+			</div>
+			<div style="width:50%; "class="image">
+				<img src="https://images.pexels.com/photos/880461/pexels-photo-880461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+			</div>
+		</section>
+
+
+		<!-- Five -->
+		<section id="intro" class="banner style1 orient-center content-align-left image-position-left fullscreen onload-image-fade-in onload-content-fade-left">
+			<div class="content" align="justify">
+				<h2>Our Data</h2>
+				<ul style="list-style-type:disc">
+					<li>Crop statistics recorded for 173 crops, from 1961 to 2016, and for areas composed of all countries.
+						The information given for crops is the area of harvest in hectars,
+						the production in tonnes and the yield in hecto grammes per hectar (hg/ha).
+					</li>
+					<li>Food and agricultural products import and export statistics for 231 products from 1961 to 2016.
+						 The information given for a trade is the export/import quantity defined
+						 by the physical quantity of domestic origin/manufactured products shipped out/in of a country in tonnes,
+						 the value of imports/exports given in thousands of dollars.</li>
+				</ul>
+				<ul class="actions stacked">
+					<li><a href="http://www.fao.org/faostat/en/#home" class="button big wide smooth-scroll-middle">Source</a>                   <a href="https://github.com/dsalathe/jurassic-spark" class="button big wide smooth-scroll-middle">Code</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<h2>Assumptions & notes:</h2>
+				<ul>
+					<li> Main recent analysis are done on year 2016, more recent datasets are incomplete. </li>
+					<li> Gross Profit: based on available data, we define the gross profit of a country, given a product, by the difference between the export value (in 1,000$) and the import value (in 1,000$). </li>
+					<li> Value per Quantity for exportation and importation: the ratio between the total value import (resp. export) over the total quantity importation (resp. exportation). Unit: [1,000$ / Tonnes]. </li>
+					<li> Population estimation per countries is provided by datasets from Geopandas. </li>
+					<li> Interactive geographic maps: it is adviced to select one category at a time.</li>
+				</ul>
+				
+			</div>
+		</section>
+
+
+		<!-- General -->
+		<section id="general" class="wrapper style1 align-center" style="background-color:white">
+			<div class="inner">
+				<h1>Why these four products ?</h1>
+				<p class="align-center"> Why have we decided to analyse these four products <em>  - apart from the fact we are hiptsers, passionate about brunches </em> ? <br/> Let's first show you why these products are interesting !</p>
+			</div>
+		</section>
+
+		<!-- Four -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content" align="justify">
+				<p>One can see that the production of most crops parent categories increased from the 1960’s until now. This trend was clearly expected because the population has increased as well. In 1961 there were 3’091 million human beings and in 2016 the number has doubled to reach 7’464 mio [<a href="#ref:WorldPop">1</a>]. </p>
+				<p>We can observe that an increase in the world population requires a higher food production in order to satisfy needs. Generally in many populations we’ve seen the income increasing and many people left the poverty state. According to the world bank, nearly 1.1 billion fewer people are living in extreme proverty (with less than 1.9$ a day) in 2015 than in 1990 [<a href="#ref:Poverty">2</a>]. With the increasing income, the diets will generally change, people will prefer high-value foods (such as livestock products) as opposed to starchy food (such as wheat). So the world production is facing two challenges : producing in quantities that has never been that high, and continuously adapting to produce the right kind of crops. </p>
+			</div>
+			<object style="width:80%" type="text/html" data="data/AllProds.html"></object>
+		</section>
+
+		<!-- Four -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content" align="justify">
+				<p>This graphs illustrates how the demand for crops changed over time. Most of the categories such as coffee, cocoa, and raw materials, rubber for example increased far more than the world population or cereals. Also, except tobacco and vegetable textile fibers, the relative increase in the production of other crops was greater than the increase in the world population.</p>
+				<p>Rubber is a raw material used in the manufacturing of many derived products, the most known being tyres. With 127 million vehicles on the world in 1960 and 1322 mio in 2016, there is a natural increase in the demand for rubber [<a href = "#ref:MotorVeihcle">3</a>].</p>
+				<P>Hence the demand for agricultural raw materials such as rubber can be related to economic growth. The advanced in fertilizers, transportation or refregiration of vegetables or fruits completely changed the way people consume food. 60 years ago, it was difficult even unconceivable to eat tomatoes in winter in Sweden after you went out to hunt for the northern lights (another typical hipster activity).  </p>
+			</div>
+			<object style="width:80%" type="text/html" data="data/IndexedProds.html"></object>
+
+		</section>
+
+
+		<!-- Four -->
+		<section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
+			<div class="content" align="justify">
+				<p> On the scatter plot we can see the four crops in our hipster brunch.</p>
+				<p>The vertical axis represents the value per quantity (VPQ). </p>
+				<p> On the plot we can observe several categories of crops: 
+					<ul>
+						<li>The cereals are cheap and produced and lot, the same for cassava or potatoes for the vegetables.</li>
+						<li>Fruits, spices, coffee and tea are more expensive and produced less than the vegetables.</li>
+						<li>Vanilla is the most expensive and the second to last most produced crops.</li>
+						<li>Tobacco is the most expensive product of interest and it's as produced as coffee and avocados. </li>
+						<li>On the other hand wheat is much more produced and in an order of magnitude cheaper than the other crops of interest. </li>
+					</ul>
+				</p>
+				<p>In the next parts we will investigate the crops starting with the wheat as a crop produced and consumed worldwide.</p>
+			</div>
+			<object style="width:80%" type="text/html" data="data/WorldwideProds.html"></object>
+		</section>
+
+		<!-- Cereals -->
+		<section id="toast" class="wrapper style1 align-center" style="background-color:white">
+			<div class="inner">
+				<h1>Your toast</h1>
+				<p class="align-left"> The main ingredient of you toast ? Cereals and if you're at a parisian terrace, you are probably eating a typical <em> french baguette </em>, i.e. wheat. Cereals are one of the most produced and exchanged crop worlwide (cf. above for 2016). It constitutes a very interesting representative of the global food market !</p>
+			</div>
+		</section>
+		
+		<!-- Intro Wheat -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content" align="justify">
+				<p>Wheat is much more than one of the first domesticated plants in Mesopotamia alongside barley, lentils, and peas. Wheat can be transformed in flour. When it’s mix with water and yeast you obtain the bread on which you can display avocados slices. But it’s much more than that. This section will present the wheat as one crop to introduce the commodity markets and the world economy :  </p>
+					<ul>
+						<li>3 rd most produced product in 2016</li>
+						<li>2 nd most exported crop in term of quantity</li>
+						<li>2 nd most imported product</li>
+						<li>120th crops in term of export vpq (200 $/tonne)</li>
+						<li>115th crops in term of import vpq (221 $/tonne) </li>
+					</ul>
+				<p>Being one of the most produced crops in the world in 2016, the wheat is also one of the most consumed product and many developing countries rely on it.</p>
+			</div>
+			<div style="width:50%; "class="image">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Vincent_Van_Gogh_-_Corn_Harvest_in_Provence_-_Google_Art_Project.jpg" alt="" />
+			</div>		
+		</section>
+		
+		<!-- Wheat VPQ -->			
+		<section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
+			<div class="content" align="justify">
+			<p class="align-left">The price evolution of wheat : </p>
+			<p>Import VPQ is larger than the export VPQ, so it’s more expensive in average to buy wheat than to sell it. Since 1961, we notice that its price fluctuated a lot and over two periods the price of this commodity increased heavily (1973-1974 and 2007-2008). </p>
+			<ul>
+				<li>In 1972, bad weather hit the world and for the first time in 20 years, world food production dropped. The production was reduced by 33 million tonnes at a time where the world required an extra 24 million tonnes to meet the needs of a rapidly rising population [<a href="#ref:Wheat">5</a>]. </li>
+				<li>Two years later in 1974, the world really needed the forecasted abundant harvests in richer nations in order to refill the stocks. But bad luck hit again and Canada, USA, the former USSR and much of Asia gathered poor crops during that year because of bad weather again. Catastrophe, at the end of the year, world cereal reserves reached a 22-year low and to make it worse, the USA government banned the exportation of 10 million tonnes of grains [<a href="#ref:Wheat">5</a>] . All of these made the prices skyrocket.</li>
+			</ul>
+			</div>	
+			<object style="width:50%" type="text/html" data="data/ImportExportVPQ.html"></object>	
+		</section>
+		
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content" align="justify">
+			<p>In the meantime, the agricultural sector has witnessed great technological advances improving the productivity of the workers and reducing the cost of growing crops. The way crops are grown changed, farmers try to grow crops they can sell for the highest price to get more benefit. For example, if maize sells to higher prices on the market then producers will tend to grow more maize at the expense of other crops. Hence the supply will be reduced and their price raised. Increasing demand for livestock products requires to grow more food for them which will increase the demand and prices for cereals and oilseeds.</p>
+			</div>
+		</section>
+		
+		<!-- Wheat VPQ + Oil -->
+		<section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
+			<div class="content" align="justify">
+			<p>Wheat prices have encountered many peaks (1973-1974, 1980-1981) even more recently (2008 and 2011-2013). This makes us think of another commodity that peaked in 1973, 1980, 2008 and 2012 because of wars or financial crises. You have it : Oil !! </p>
+			<p>The pearson correlation coefficient between this commodity and wheat is quite significant : 0.908 and 0.906 for respectively the wheat export and import value per quantity. </p>
+			<p>One can think of many reasons which can explain the correlation between wheat and petrol. Fertilizers and chemical products are basically made of oil derivatives and they’re used to grow wheat for instance. If oil is expensive then wheat will also be expensive to produce. This factor is amplified because many developing countries also import oil. So if the oil is more expensive then they’re left with less to buy the chemicals and nutrients that requires their high-yield intensive farming.</p>
+			</div>	
+			<object style="width:50%" type="text/html" data="data/ImportExportVPQOil.html"></object>			
+		</section>
+		<section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in">
+			<div class="content" align="justify">
+			<p>Another reason could be that countries experience rapid economic growth (country from emerging market economies) requires more crude oil to transport goods or to provide services. In China or in India, people change their eating habits because they have higher incomes which allow them to afford more nutritious diets, increasing their demand for agricultural products, like corn, wheat or soybeans an increasing demand for food, especially for livestock products, which generated increased cereal and oilseed demand to feed the cattle [<a href="#ref:Correlation">6</a>].</p>
+			<p>Last solution could be the increase in the popularity of biofuels. They’re made from maize for example for the ethanol. Record oil prices and environmental concerns strengthened the interest in finding alternative energy sources. A list of policy measures in the United States of America and the European Union (EU) encouraged the expansion of biofuel production [<a href="#ref:biofuels">7</a>]. </p>
+			</div>
+		</section>
+		
+		<!-- Folium -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content" align="justify">
+			<p>This map illustrates perfectly the wheat market. In red are shown the countries that import more wheat or flour than they export and in green the ones that export more. For the poor in developing countries, food can account for at least 50 percent and up to 70–80 percent of their budget. Thus, higher prices affect not only their food consumption in terms of quantity and quality, but also their spending in general. The most visible indicator of this negative impact was the social unrest and rioting that erupted around the world triggered by soaring food prices. Many of the poorest countries are food importers, heavily dependent on cereal imports. Higher food prices on world markets mean higher food import bills and a balance of payments problem</p>
+			</div>	
+			<object style="width:80%" type="text/html" data="data/wheat_2016_diff_quantity.html"></object>			
+		</section>
+		
+		<!-- Bar Chart -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content" align="justify">
+			<p>Let’s have a look at the big names in the wheat market. From which country the flour in your bread is most likely to come from ? Australia, Canada, France, Russia, Ukraine and the United States of America are the ones who export wheat the much. Algeria, Brazil, Egypt Spain and Italy are the biggest importers.</p>
+			<p>The general overview of a wheat market is the following : few countries with high yield, high production area flood the world with wheat. The wheat is mostly manufactured and transformed inside the countries it’s imported. Only Turkey imports significant amount of wheat and re-exports flour. Looking at China and India, their cereals import have been going downwards since 1980, by about 4 percent per year. In the early 1980 they were importing on average about 14 million tonnes per year to roughly 6 million at the beginning of this decade[<a href="#ref:Wheat">5</a>]. This means that the growth in cereals demand in these two countries has been met mainly from domestic sources.  </p>
+			</div>
+			<object style="width:100%" type="text/html" data="data/ImportExportWheat.html"></object>			
+		</section>
+
+		<!-- Avocado -->
+
+		<section id="avocado" class="wrapper style1 align-center" style="background-color:white">
+			<div class="inner">
+				<h1>Fancy Avocado </h1>
+				<h3>(this is where the fun begins...)</h3>
+				<p class="align-left"> Avocado is everywhere. <br/>You cannot escape it, it goes on everything: on toast, in burgers, in sushi… <em>and on the toast of your brunch ! </em> <br/> You can see it everywhere: on Instagram, Instagram stories… <br/> Any great source of content! <br/>Avocados are usually cultivated in tropical and Mediterranean climates. <br/> To find it at your local, organic Sunday brunch in Paris (or Lausanne), something has to be going on. Let’s figure it out! </p>
+			</div>
+		</section>
+
+		<!-- Avocado intro -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-color:white">
+			<div class="content" align="justify">
+				<p>A few years ago, this beautiful fruit became the sexiest ingredient of the decade. You can see on <a href="https://trends.google.com/trends/explore?date=all&q=avocado,cucumber">Google Trends</a>, the <strong>rate of interest</strong> of the delightful avocado compared to the one of the boring cucumber. </p>
+			</div>
+			<object style="width:100%" type="text/html" data="data/avocado_trend.html"></object>			
+
+		</section>
+
+
+		<!-- <section id="avocado" class="wrapper style1 justify" style="background-color:white">
+			<div class="inner">
+				<p class="justify"> In 1961, producers of avocados are mostly Central to South America, and African countries (Morocco, Kenya, Mexico, Paraguay...). The USA also produced avocados, and were the first Northern country to produce avocados. Over the years, some Europeans countries started producing their own: the first record of French avocado appears in 1988, Portugal in 1990. China started producing avocados in 1992.</p>
+			</div>
+		</section>-->
+
+
+		
+
+		<!-- Coffee quantity -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-color:white">
+			<div class="content">
+				<h3>Main importers and exporters of avocados</h3>
+				<p> Nowadays, the main players in the avocado trade are the USA huge importers, and Mexico exports most avocados in the world. Our brunch seems way less local...</p>
+			</div>
+			<object style="width:100%" type="text/html" data="data/ImportExportAvocados.html"></object>
+
+		</section>
+
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-color:white">
+			<div class="content" align="justify">
+				<p> <br/><br/>
+				We can see that the export value per quantity as well as the production skyrocketed in the 2000s, with the trend. Avocado has become a valuable commodity for Mexico, that used to export it rather cheap.
+			<br/><br/></p>
+			</div>
+			<object style="width:100%" type="text/html" data="data/MexicoAvocados.html"></object>			
+
+		</section>
+
+
+		<section class="spotlight style1 orient-left content-align-right image-position-left onscroll-image-fade-in" style="background-color:white">
+			<object style="width:100%" type="text/html" data="data/avocados_2016_profit.html"></object>			
+			<div class="content" align="justify">
+				<h3>#overexploitation</h3>
+				<p>We can see on the map that only a few countries make a profit by exporting avocados, meaning these few countries need to feed the entire world. <br/> Overexploitation or overharvesting can cause environmental and even societal issues. Growing avocados costs water to countries that do not have much, <a href="https://www.kcet.org/shows/earth-focus/green-gold-a-global-demand-for-avocados-leaves-people-without-water-in-chile"> in Chile for example </a>. <br/> <a href="https://www.latimes.com/world-nation/story/2019-11-20/mexico-cartel-violence-avocados">In mexico</a>, drug cartels fight over the control of the avocado industry as this green gold has become this valuable. <br/>
+				We could call this the ripple effect of the #avocadotoast.</p>
+			</div>
+		</section>
+		
+
+
+
+		<!-- Coffee -->
+		<section id="coffee" class="wrapper style1 align-center" style="background-color:white">
+			<div class="inner">
+				<h1>A Cup of Joe</h1>
+				<p class="align-center">A brunch cannot be called a <em>"brunch"</em> without the most important thing : <strong>COFFEEEE</strong>.</p>
+				<p class="align-center">The first coffee plant in Brazil was planted in 1727 by Francisco de Melo Palheta in the state of Pará. In 2016 this country was the world biggest coffee exporter and there is good chance that you coffee cup contains coffee that has grown in Brazil.</p>
+			</div>
+		</section>
+
+		<!-- Coffee quantity -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-color:white">
+			<div class="content" align="justify">
+				<h3>Coffee trades</h3>
+				<p>Brazil and Vietnam are the two biggest exporters and producers of coffee in 2016.</p>
+				<p>The enclosed plot illustrates the export vs. import quantity traded in 2016 for the 50 biggest “players” in the coffee market. (Note that here we haven’t scaled down taking into account the country’s population, because we are interested in the main actors globally.)</p>
+
+				<p>The two biggest exporters of green coffee beans are Brazil and Vietnam (respectively exporting more than 1.9M and 1.5M tonnes in 2016). Some other countries come into play, such as Colombia (734K tonnes), Germany (335K tonnes) and Indonesia (412K tonnes) … wait, have you ever seen a coffee grown in Germany ?</p> 
+				<p>Actually Germany doesn’t produce any coffee. How is it that it is so important as a coffee exporter ? 
+				Let’s try to understand why Germany is so important in the coffee market !
+				</p>
+			</div>
+			<object style="width:100%" type="text/html" data="data/ImportExportCoffee.html"></object>
+
+		</section>
+
+		<!-- Coffee value -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-color:white">
+
+			<div class="content" align="justify">
+				<h3>Coffee value</h3>
+				<p>Why would Germany play with coffee importation vs. exportation ? Probably because it is a profitable market ! Let’s see the value of the importation vs exportation for these top 50 countries.</p>
+				<p>The plot on the right shows the import vs export value (in USD $1’000) in 2016 for the top 50 “players” in the coffee market.</p>
+
+				<p>From our “value per quantity” measure, Germany imports green coffee beans at an average price of 2.61 (USD$/kg) and exports it back for an average price of 2.77 (USD$/kg), thus earning USD $0,16 per kilogram of sold green coffee beans and approximately USD $ 55’157’000 in 2016 ! (as they export 335K tonnes for green coffee beans). This confirms our hypothesis of “profitable market”. </p> 
+
+				<p>Actually Germany is not the only country that takes advantage from trading coffee ! We can see other countries standing out : Belgium, Italy, Switzerland for example.
+				<p>Belgium earns money mainly from exportation of roasted coffee and green coffee beans. Yet, like Germany, it is not a coffee-producing country.</p>
+			</div>
+
+			<object style="width:100%" type="text/html" data="data/ImportExportCoffeeValue.html"></object>
+		</section>
+
+		<!-- Coffee again -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-color:white">
+			<div style="width:50%; "class="image">
+				<img src="https://images.pexels.com/photos/894695/pexels-photo-894695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+			</div>	
+			<div class="content" align="justify">
+				<h3>Coffee roasting</h3>
+
+				<p>Switzerland exports mainly roasted coffee (65K tonnes) and imports green coffee beans (151K). As it buys very few coffee roasted, it may be inferred that Switzerland buys coffee as a commodity, roasts it and sells roasted coffee. 
+				How much is it profitable for Switzerland ?
+				<p>They import green coffee beans at an average price of 3.92 (USD$ per kg), and export roasted coffee at an average price of 31.15 (USD$ per kg), thus earning USD $27,23 per kilogram of sold roasted coffee and approximately USD $1’ 770’041’195 in 2016 !</p>
+
+				<p>An analog analysis can be done with Italy. Those countries mainly earn money in the coffee market through their added value (roasting coffee).</p>
+
+				
+			</div>
+	
+		</section>
+
+		<!-- Disclaimer -->
+		<section id="coffee-disclaimer" class="wrapper style1 align-center" style="background-color:white">
+			<div class="inner">
+				<p class='justify'> <strong><em> Disclaimer: </em></strong>One important thing though, is that we do not have information on the cost of roasting coffee. We can only estimate the gross profit but not the net profit and it may not be that profitable actually, depending on the cost of roasting coffee (ressources, infrastructure, …). </p>
+			</div>
+		</section>
+
+		<!-- Coffee map -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-color:white">
+			<div class="content" align="justify">
+				<h3>Around the world</h3>
+
+				<p>Finally this map shows the gross profit (export value - import value) per country, scaled down taking into account the country population. When selecting type of traded coffee with the boxes and hovering your mouse over the map, you can see statistics on trades and crops. The colors represent the gross profit. </p>
+				<p>When selecting either <em>coffee green</em> or <em>coffee roasted</em>, you can see the Switzerland particularly stands out ! In fact as it is a small country and a major actor in coffee trading at the same time, comparing to other countries it is very significant.</p>
+
+			</div>
+			<object style="width:80%" type="text/html" data="data/coffee_2016_profit.html"></object>			
+
+		</section>
+		
+		<!-- Coffee conclusion -->
+		<section id="coffee-conclusion" class="wrapper style1 align-center" style="background-color:white">
+			<div class="inner">
+				<h3>In the end, what about coffee ?</h3>
+				<p> What does lie behind the cost of your coffee ? Why does it cost 2.50€ in France vs. 4.50.- in Switzerland ? Of course there are many other factors that come into play, but at least now you know more about where you coffee may have been produced, roasted, and why would countries come into play in the coffee market even if it doesn't seem obvious at first glance.
+
+				<p>You won't see your coffee cup the same way anymore !</p>
+				</p>
+			</div>
+		</section>
+
+
+
+		<!-- Tobacco -->
+		<section id="tobacco" class="wrapper style1 align-center" style="background-color:white">
+			<div class="inner">
+				<h1>A cigarette to top it off</h1>
+				<p class="align-center">A coffee cannot be called a <em>"coffee"</em> without its best companion : <strong>a cigarette</strong>.</p>
+				<p class="align-left"> Cigarette is the product that is the most transformed before being consumed, compared to the previously presented products. How many countries are involved in the production of cigarettes ? How far has the cigarette travelled before arriving in our "tabac" ? </p>				
+
+			</div>
+		</section>
+		
+		<!-- Tobacco intro -->
+		<section class="spotlight style1 orient-left content-align-right image-position-left onscroll-image-fade-in" style="background-color:white">
+			<div style="width:10%; "class="image">
+				<img src="https://images.pexels.com/photos/2827798/pexels-photo-2827798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+			</div>	
+			<div class="content" align="justify">
+				<p>As explained earlier, and as you can see in the “Worldwide Production in 2016” plot, tobacco, as a product has a high value per quantity, and is widely produced. <br/>
+				Mostly used for smoking, tobacco is sold under the form of cigarettes all over the world. The size of the cigarette market can be explained by the highly addictive nature of nicotine found in tobacco leaves. <br/>
+				Ignoring the (weird) products cigarettes contain, and focusing on the tobacco plant, we will show the journey of the tobacco, and illustrates the countries that profit from the highly fruitful and controversial business of cigarettes. </p>	
+
+			</div>
+		</section>
+
+		<!-- Tobacco top producers -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-color:white">
+
+			<div class="content" align="justify">
+				<h3>Top tobacco producers</h3>
+				<p>Looking at the production of tobacco over time for the top 5 producers of tobacco of 2016, we clearly see that China is a main player in the tobacco production. <br/>The worldwide tobacco production peaked in 1997, where it was 2.5 times higher than in 1961. <br/>Taking out China of the equation, and the peak worldwide production is in 1993, where it was 1.5 times higher than in 1961. </p> <p>We thus expect China to be the main source of tobacco in the world.</p>
+			</div>
+
+			<object style="width:100%" type="text/html" data="data/top_tobacco_producers.html"></object>
+		</section>
+
+		<!-- Tobacco Map -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" style="background-color:white">
+			<object style="width:80%" type="text/html" data="data/tobacco_2016_top20.html"></object>
+
+			<div class="content" align="justify">
+				<p>In the map, we highlighted the main actors in the tobacco/cigarettes trade business, in 2016.  <br/>From the map, we can derive some conclusions:</p>
+				<ul>
+				<li>Tobacco is not exclusively exported by big producers. Some european countries such as Germany, Belgium and the Netherlands use it as a trade commodity: they import it cheap to sell them at a higher price: Russia, France, Paraguay, South Africa… Brazil is the number one exporter, not China as we expected. <strong>It turns out that the Chinese people seems to smoke most of its tobacco!</strong> </li>
+				<li>The main importers of tobacco unmanufactured are, as expected, the European countries that export but don’t produce (Germany, Belgium), but also Russia, one the number one importer of tobacco. <strong>China also imports tobacco, they really love tobacco! </strong></li>
+				<li>Most of the main importers use tobacco as a way to <strong>manufacture cigarettes</strong>. We see that Germany and Netherlands not only trade unmanufactured tobacco, but also are the main exporters of cigarettes.</li>
+				<li>The main cigarettes importers are sometimes <strong>surprising</strong>: Australia is still a main importer, <a href="https://www.who.int/tobacco/global_report/2017/appendix-ix/en/">even with the strong taxes on cigarettes</a>. China, who we expected to have enough cigarettes, is still one of the main importers! As well Germany and Netherlands are also big cigarettes importers. They deal with tobacco at all fronts.</li>
+				</ul>
+			</div>
+
+		</section>
+
+		<section id="tobacco2" class="wrapper style1 align-center" style="background-color:white">
+			<div class="inner">
+				<p class="align-center"> Tobacco is a global business, leaving most of North Africa out of it. <br/> Given the many actors, that all have different roles we can ask ourselves: <strong>who makes the most money trading tobacco or cigarettes?</strong> </p>
+			</div>
+		</section>
+
+		<!-- Tobacco Profit -->
+		<section class="spotlight style1 orient-left content-align-right image-position-center onscroll-image-fade-in" style="background-color:white">
+
+			<div class="content" align="justify">
+				<p>As shown in the plot on the right, we can see a good “business model”: you import tobacco cheaply, and you export cigarettes with a huge profit (remember the high value per quantity). <br/>Germany follows this model and is the country with the highest gross profit in terms of import/export of tobacco related trades. The big producers of tobacco thus make most of their money exporting it, or making cigarettes and exporting them. </p> 
+				<p> Strangely China is part of the countries losing the most money dealing with international tobacco trades. This is explained by the <a href="https://fr.wikipedia.org/wiki/China_National_Tobacco_Corporation">CNTC: China National Tobacco Corporation</a>, a state-owned manufacturer of tobacco products that has the monopoly of the market in China. 
+				<p><strong>China is the n°1 consumer of cigarettes (roughly 40% of the world’s consumption), explaining the tobacco/cigarettes concentration around this country.</strong> </p>
+			</div>
+
+			<object style="width:80%" type="text/html" data="data/Tobacco_profit.html"></object>
+
+
+		</section>
+
+
+
+		<!-- Conclusion -->
+		<section id="conclusion" class="wrapper style1 align-center" style="background-color:white">
+			<div class="inner">
+				<h1>What's to take away from this ?</h1>
+				<p class="align-left"> Infinite analysis can be done and we don’t want to drown you in numbers, but rather to show you how complex can the food market be. </p>
+
+				<p class="align-left"> We don't always know what we consume. Starting only with official united nation statistics, we discovered the journey of the food and the trade commodities that end up in our daily hipster brunch, supported by all the history of food. This journey takes on a world-wide range, an epic journey showing the machinery and the effect of globalization in our world.</p>
+				<!-- <p class="align-left"> It is easy to hear many false stories about food concerning their ethical issues or their ecological and financial impact. <br/>Starting only with official united nation statistics, we have shown you what you are actually consuming on your daily hipster brunch on a wide-world range, supported by all the history of food during the last century.</p> -->
+				<p class="align-left">Yes, your <strong>avocado</strong> is not necessarily from France, and yes it is the new green gold of south america and has ethical problems. Indeed <strong>coffee</strong> is more than a fancy product but a world wide business. And yes, <strong>cigarettes</strong> are traveling the world to be consumed aside your fancy brunch. And yes, <strong>wheat</strong> is a need that has to be farmed extensively for your french baguette, strongly related to how the world is doing. </p>
+				<p>So knowing all of that, you might think in a more responsible way now. <br/>But don't worry! It is not wrong to enjoy life and having a local ethical hipster brunch from time to time! </p>
+				
+			</div>
+
+		</section>
+		
+		<!-- References -->
+		<section id="conclusion" class="wrapper style1 align-left" style="background-color:white">
+			<div class="inner">
+			<h1>References</h1>
+				<p> [<a style="text-decoration:none" name="ref:WorldPop">1</a>] : World  population  by  year. <a href="https://www.worldometers.info/world-population/world-population-by-year/">https://www.worldometers.info/world-population/world-population-by-year/</a>. Accessed: 2019-12-20</p>
+				<p> [<a style="text-decoration:none" name="ref:Poverty">2</a>] : Understanding poverty.<a href="https://www.worldbank.org/en/topic/poverty/overview">https://www.worldbank.org/en/topic/poverty/overview</a>.  Accessed: 2019-12-20</p>
+				<p> [<a style="text-decoration:none" name="ref:MotorVehicle">3</a>] : Wikipedia contributors. Motor vehicle — Wikipedia, the free encyclopedia, 2019. Accessed:2019-12-20 </p>
+				<p> [<a style="text-decoration:none" name="ref:VPQ">4</a>] : SI  brochure:   The  international  system  of  units  (si). <a href="https://www.bipm.org/en/publications/si-brochure/section5-3.html">https://www.bipm.org/en/publications/si-brochure/section5-3.html</a>. Accessed: 2019-12-20.
+				<p> [<a style="text-decoration:none" name="ref:Wheat">5</a>] : The State of Agricultural Commodity Markets 2009 <a href ="http://www.fao.org/3/i0854e/i0854e01.pdf"> http://www.fao.org/3/i0854e/i0854e01.pdf</a> Accessed:2019-12-20 </p>
+				<p> [<a style="text-decoration:none" name="ref:Correlation">6</a>] : U.S Energy Information Administration.  Implications of changing correlations between wti and other commodities, asset classes, and implied volatility. <a href = "https://www.eia.gov/finance/markets/reports_presentations/correlation_paper_final.pdf">https://www.eia.gov/finance/markets/reports_presentations/correlation_paper_final.pdf</a>, 2012.  Accessed:  2019-12-20.</p>
+				<p> [<a style="text-decoration:none" name="ref:biofuels">7</a>] : A. Flammini M. Schlaifer M.A. Kropiwnicka M. M. Markhof D. Diop, M. Blanco. Assessing theimpact of biofuels production on developing countries from the point of view of policy coherencefor development – final report. <a href = "https://ec.europa.eu/europeaid/sites/devco/files/study-impact-assesment-biofuels-production-on-development-pcd-201302_en_2.pdf">https://ec.europa.eu/europeaid/sites/devco/files/study-impact-assesment-biofuels-production-on-development-pcd-201302_en_2.pdf</a>,2013. Accessed: 2019-12-20</p>
+
+			</div>
+		</section>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
